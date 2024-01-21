@@ -1,0 +1,36 @@
+html {
+    height : 100%;
+    width : 100%;
+    font-size: 32px;
+}
+body {
+    height : 100%;
+    width : 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    filter: brightness(100%);
+}
+img{
+    width: 64px;
+    height: 64px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 30px;
+    
+}
+.border {
+    width: 500px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    right: 30%;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+.tb{
+    border: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
