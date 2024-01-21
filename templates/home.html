@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Graph Data_</title>
+        <link rel = 'stylesheet' href = '{{url_for('static', filename = 'styles.css')}}'>
+    </head>
+
+    <body>
+        <h2>{{title}}</h2>
+        <h5 style="font-family:century gothic; color:rgb(255, 255, 255)"> visualize data </h5>
+        <div class = "border">
+            <h1 style="font-family:century gothic;color:rgb(46, 37, 99);size:20px"> Graph Data_ </hi>
+        </div>
+        <br><br><br><br>
+        <h3 style="font-family:century gothic; color:rgb(255, 255, 255)"> input table size!</h3>
+        <form action = "{{url_for("home")}}" method = "POST">
+            <label style="font-family:century gothic;color:white; font-size:15px" for="rows">Rows:</label>
+            <input style="font-family:century gothic;color:rgb(51, 48, 103)" type="text" id="rows" name="rows"><br><br>
+            <input style="font-family:century gothic;color:rgb(57, 43, 109)" type="submit" value="Submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            var num = 0
+        </script>
+        <link rel = 'stylesheet' href = '{{url_for('static', filename = 'styles.css')}}'>
+        <form action = "{{url_for("table")}}" method = "POST">
+        <table class = "tb">
+            {%for row in r%}
+            {%set rowIndex = loop.index%}
+            <tr>
+                {%for column in c%}
+                {%set columnIndex = loop.index%}
+                <th>
+                    <p>{{rowIndex}} + {{loop.index}}</p>
+                    <input style="font-family:century gothic;color:rgb(67, 70, 130)" type="text" id="{{rowIndex}} + {{loop.index}}" name="{{rowIndex}} + {{loop.index}}"><br><br>
+                    <script>
+                        var num = num + 1
+                    </script>
+                </th>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+        <input style="font-family:century gothic;color:rgb(57, 43, 109)" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
